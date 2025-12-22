@@ -29,6 +29,6 @@ public class ProductRequest {
     @Size(max = 50)
     private String category;
 
-    @Size(max = 500)
+
     private String imageUrl;
 }

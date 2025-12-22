@@ -33,7 +33,7 @@ public class Product {
     @Column(length = 50)
     private String category;
 
-    @Column(length = 500)
+    @Column(columnDefinition = "LONGTEXT")
     private String imageUrl;
 
     @Enumerated(EnumType.STRING)
