@@ -33,6 +33,9 @@ public class Product {
     @Column(length = 50)
     private String category;
 
+    @Column(length = 500)
+    private String imageUrl;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private ProductStatus status;

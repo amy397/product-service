@@ -22,6 +22,7 @@ public class ProductResponse {
     private BigDecimal price;
     private Integer stock;
     private String category;
+    private String imageUrl;
     private ProductStatus status;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -34,6 +35,7 @@ public class ProductResponse {
                 .price(product.getPrice())
                 .stock(product.getStock())
                 .category(product.getCategory())
+                .imageUrl(product.getImageUrl())
                 .status(product.getStatus())
                 .createdAt(product.getCreatedAt())
                 .updatedAt(product.getUpdatedAt())

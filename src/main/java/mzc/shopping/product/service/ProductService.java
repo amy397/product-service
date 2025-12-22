@@ -30,6 +30,7 @@ public class ProductService {
                 .price(request.getPrice())
                 .stock(request.getStock())
                 .category(request.getCategory())
+                .imageUrl(request.getImageUrl())
                 .status(ProductStatus.AVAILABLE)
                 .build();
 
@@ -83,6 +84,7 @@ public class ProductService {
         product.setPrice(request.getPrice());
         product.setStock(request.getStock());
         product.setCategory(request.getCategory());
+        product.setImageUrl(request.getImageUrl());
 
         return ProductResponse.from(product);
     }
